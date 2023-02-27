@@ -6,6 +6,8 @@ import Header from "./Header";
         <Song
             id = {index+1}
             imageUrl={item.imageUrl}
+            previewUrl={item.previewUrl}
+            externalUrl={item.externalUrl}
             title={item.songTitle}
             artist={item.songArtists[0].name}
             albumName= {item.albumName}
@@ -17,14 +19,12 @@ import Header from "./Header";
     return(
     <SafeAreaView>
         <Header></Header>
-        <ScrollView>
             <FlatList 
                     data={tracks}
                     renderItem ={(item) => 
                         renderItem(item)}
-                    keyExtractor = {(item) => item.id}
+                    keyExtractor={(item, index) =>item.id}
             />
-        </ScrollView>
     </SafeAreaView>
     );
 
