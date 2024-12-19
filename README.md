@@ -1,7 +1,4 @@
-# cs47-a3-starter-w23
-a3 starter code
+# Spotify Top Tracks Audio Player
 
-Starting the app
-1. git clone https://github.com/acui51/cs47-a3-starter-w23.git
-2. `yarn install`
-3. `npx expo start`
+This app built in React Native utilizes the Spotify API to return a list of a user's top 20 tracks along with an audio player for each track.
+
